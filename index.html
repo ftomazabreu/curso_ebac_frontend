@@ -1,103 +1,205 @@
 <!DOCTYPE html>
-  <html lang="pt-BR">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Portal de Notícias - EBAC</title>
-      <!-- Importação da folha de estilos CSS -->
-      <link rel="stylesheet" href="styles.css">
-  </head>
+<html lang="pt-BR">
+    <head>
+          <!-- Metadados da página -->
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Flávio Tomaz - Desenvolvedor Full Stack</title>
+        
+        <!-- Stylesheet personalizado -->
+        <link rel="stylesheet" href="portfolio.css" />
+        
+        <!-- Google Fonts para tipografia customizada -->
+        <link
+                href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap"
+                rel="stylesheet"
+              />
+    </head>
+
   <body>
-      <!-- Cabeçalho da página -->
-      <header class="header">
-          <h1>Portal de Notícias</h1>
-          <p class="subtitle">Acompanhe as principais notícias do momento</p>
-      </header>
-
-      <!-- Seção principal de conteúdo -->
-      <main class="container">
-
-          <!-- Seção de Tecnologia -->
-          <section class="section section-technology">
-              <h2 class="section-title">Tecnologia</h2>
-              <p class="section-description">Fique por dentro dos últimos avanços tecnológicos e inovações do mercado</p>
-
-            <div class="news-container">
-                <!-- Notícia 1 -->
-                  <article class="news-card">
-                      <h3 class="news-title">Inteligência Artificial Revoluciona Desenvolvimento Web</h3>
-                    <p class="news-date">12 de Maio, 2024</p>
-                    <p class="news-content">
-                          Novas ferramentas de IA estão transformando a forma como desenvolvedores criam aplicações web. 
-                          A automação de código e assistentes inteligentes aumentam a produtividade em até 40%.
-                      </p>
-                  </article>
-
-                <!-- Notícia 2 -->
-                  <article class="news-card">
-                      <h3 class="news-title">Linguagens de Programação em Ascensão em 2024</h3>
-                      <p class="news-date">10 de Maio, 2024</p>
-                      <p class="news-content">
-                        TypeScript e Rust ganham espaço entre desenvolvedores profissionais. 
-                        A busca por segurança de tipos e performance motiva a adoção destas linguagens em grandes projetos.
-                    </p>
-                </article>
-
-                  <!-- Notícia 3 -->
-                  <article class="news-card">
-                    <h3 class="news-title">Framework Vue.js Lança Versão 4</h3>
-                    <p class="news-date">08 de Maio, 2024</p>
-                    <p class="news-content">
-                          Com melhorias significativas em performance e uma API mais intuitiva, 
-                          a versão 4 do Vue.js promete facilitar ainda mais o desenvolvimento de aplicações modernas.
-                    </p>
-                </article>
-              </div>
-          </section>
-
-        <!-- Seção de Entretenimento -->
-        <section class="section section-entertainment">
-            <h2 class="section-title">Entretenimento</h2>
-            <p class="section-description">Conheça as novidades do mundo do cinema, música e games</p>
-
-              <div class="news-container">
-                <!-- Notícia 1 -->
-                <article class="news-card">
-                      <h3 class="news-title">Novo Blockbuster de Ficção Científica Quebrando Recordes</h3>
-                    <p class="news-date">11 de Maio, 2024</p>
-                    <p class="news-content">
-                        Com efeitos visuais impressionantes e uma trama envolvente, 
-                          o novo filme de ficção científica arrecada bilhões em sua primeira semana de exibição.
-                      </p>
-                  </article>
-
-                  <!-- Notícia 2 -->
-                <article class="news-card">
-                    <h3 class="news-title">Artista Brasileiro Premiado em Festival Internacional</h3>
-                      <p class="news-date">09 de Maio, 2024</p>
-                    <p class="news-content">
-                          Um músico brasileiro levou o prêmio de melhor performance em importante festival musical. 
-                          A apresentação emocionante conquistou críticos e público ao redor do mundo.
-                      </p>
-                </article>
-
-                  <!-- Notícia 3 -->
-                  <article class="news-card">
-                      <h3 class="news-title">Game Indie Revoluciona Gênero de Estratégia</h3>
-                    <p class="news-date">07 de Maio, 2024</p>
-                    <p class="news-content">
-                        Um jogo independente com mecânicas inovadoras se torna fenômeno viral. 
-                          Jogadores ao redor do mundo elogiam a criatividade e profundidade da jogabilidade.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-      </main>
-
-      <!-- Rodapé da página -->
+        <!-- Navegação fixa no topo -->
+        <nav class="navbar">
+                <div class="nav-container">
+                          <div class="logo">Flávio Tomaz</div>div>
+                          <ul class="nav-menu">
+                                      <li><a href="#sobre">Sobre</a>a></li>
+                                    <li><a href="#projetos">Projetos</a>a></li>
+                                    <li><a href="#habilidades">Habilidades</a>a></li>
+                                    <li><a href="#contato">Contato</a>a></li>
+                          </ul>ul>
+                </div>div>
+        </nav>nav>
+  
+      <!-- Seção Hero - Apresentação principal -->
+      <section id="hero" class="hero">
+            <div class="hero-content">
+                    <h1 class="hero-title">Olá, sou Flávio Tomaz</h1>h1>
+                    <p class="hero-subtitle">
+                      Desenvolvedor Full Stack apaixonado por criar experiências web
+                      modernas e responsivas
+                    </p>p>
+                    <a href="#contato" class="btn-primary">Entre em Contato</a>a>
+            </div>div>
+      </section>section>
+  
+      <!-- Seção Sobre -->
+      <section id="sobre" class="section about">
+            <div class="container">
+                    <h2 class="section-title">Sobre Mim</h2>h2>
+                    <p class="about-text">
+                      Sou um desenvolvedor Full Stack com experiência em desenvolvimento web moderno.
+                      Especializado em HTML5, CSS3, JavaScript e tecnologias web atuais.
+                      Tenho paixão por criar interfaces intuitivas e código limpo e manutenível.
+                    </p>p>
+            </div>div>
+      </section>section>
+  
+      <!-- Seção Projetos -->
+      <section id="projetos" class="section projects">
+            <div class="container">
+          <h2 class="section-title">Projetos</h2>h2>
+                    <div class="projects-grid">
+                              <!-- Projeto 1 -->
+                              <div class="project-card">
+                                          <div class="project-header">Portfólio Profissional</div>div>
+                                          <p class="project-description">
+                                            Site de portfólio responsivo com design moderno, navegação fluida e
+                                            formulário de contato funcional.
+                                          </p>p>
+                                          <div class="project-tech">
+                                                        <span>HTML5</span>
+                                                        <span>CSS3</span>
+                                                        <span>Responsive</span>
+                                          </div>div>
+                              </div>div>
+                    
+                              <!-- Projeto 2 -->
+                              <div class="project-card">
+                                          <div class="project-header">Portal de Notícias</div>div>
+                                          <p class="project-description">
+                                            Aplicação web para exibição de notícias com categorias temáticas,
+                                            design intuitivo e componentes reutilizáveis.
+                                          </p>p>
+                                          <div class="project-tech">
+                                                        <span>HTML5</span>
+                                                        <span>CSS3</span>
+                                                        <span>Flexbox</span>
+                                          </div>div>
+                              </div>div>
+                    
+                              <!-- Projeto 3 -->
+                              <div class="project-card">
+                                          <div class="project-header">Formulário Interativo</div>div>
+                                          <p class="project-description">
+                                            Formulário de registro com validação, design responsivo e
+                                            componentes de entrada bem estruturados.
+                                          </p>p>
+                                          <div class="project-tech">
+                                                        <span>HTML5</span>
+                                                        <span>CSS3</span>
+                                                        <span>Forms</span>
+                                          </div>div>
+                              </div>div>
+                    </div>div>
+            </div>div>
+      </section>section>
+  
+      <!-- Seção Habilidades -->
+      <section id="habilidades" class="section skills">
+            <div class="container">
+                    <h2 class="section-title">Habilidades</h2>h2>
+                    <div class="skills-container">
+                              <!-- Habilidades Frontend -->
+                              <div class="skill-group">
+                                          <h3 class="skill-category">Frontend</h3>h3>
+                                          <ul class="skill-list">
+                                                        <li>HTML5 Semântico</li>
+                                                        <li>CSS3 Avançado</li>
+                                                        <li>Flexbox & Grid</li>
+                                                        <li>Design Responsivo</li>
+                                                        <li>JavaScript ES6+</li>
+                                          </ul>ul>
+                              </div>div>
+                    
+                              <!-- Habilidades Backend -->
+                              <div class="skill-group">
+                                          <h3 class="skill-category">Backend</h3>h3>
+                                          <ul class="skill-list">
+                                                        <li>Python</li>
+                                                        <li>Banco de Dados</li>
+                                                        <li>APIs RESTful</li>
+                                                        <li>Git & GitHub</li>
+                                          </ul>ul>
+                              </div>div>
+                    
+                              <!-- Ferramentas -->
+                              <div class="skill-group">
+                                          <h3 class="skill-category">Ferramentas</h3>h3>
+                                          <ul class="skill-list">
+                                                        <li>VS Code</li>
+                                                        <li>GitHub</li>
+                                                        <li>Vercel</li>
+                                                        <li>DevTools</li>
+                                          </ul>ul>
+                              </div>div>
+                    </div>div>
+            </div>div>
+      </section>section>
+  
+      <!-- Seção Contato -->
+      <section id="contato" class="section contact">
+            <div class="container">
+                    <h2 class="section-title">Entre em Contato</h2>h2>
+                    <form class="contact-form">
+                              <div class="form-group">
+                                          <input
+                                                          type="text"
+                                                          placeholder="Seu Nome"
+                                                          required
+                                                          class="form-input"
+                                                        />
+                              </div>div>
+                              <div class="form-group">
+                                          <input
+                                                          type="email"
+                                                          placeholder="Seu Email"
+                                                          required
+                                                          class="form-input"
+                                                        />
+                              </div>div>
+                              <div class="form-group">
+                                          <textarea
+                                                          placeholder="Sua Mensagem"
+                                                          rows="5"
+                                                          required
+                                                          class="form-textarea"
+                                                        ></textarea>
+                              </div>div>
+                              <button type="submit" class="btn-primary">Enviar Mensagem</button>button>
+                    </form>form>
+            
+                    <!-- Links sociais e contato -->
+                    <div class="social-links">
+                              <a href="mailto:flavio@example.com" class="social-link"
+                                            >Email: flavio@example.com</a
+                                                                                  >
+                              <a href="https://github.com" class="social-link" target="_blank"
+                                            >GitHub</a
+                                                               >
+                              <a href="https://linkedin.com" class="social-link" target="_blank"
+                                            >LinkedIn</a
+                                                                 >
+                    </div>div>
+            </div>div>
+      </section>section>
+  
+      <!-- Footer -->
       <footer class="footer">
-          <p>&copy; 2024 Portal de Notícias. Todos os direitos reservados.</p>
-      </footer>
+            <div class="container">
+                    <p>&copy; 2026 Flávio Tomaz. Todos os direitos reservados.</p>
+            </div>div>
+      </footer>footer>
   </body>
-  </html>
+</html>html></p></a></a></textarea></li></li></span></span></li></li>
+  </body></title>
+    </head>
