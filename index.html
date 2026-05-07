@@ -1,205 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-          <!-- Metadados da página -->
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Flávio Tomaz - Desenvolvedor Full Stack</title>
-        
-        <!-- Stylesheet personalizado -->
-        <link rel="stylesheet" href="portfolio.css" />
-        
-        <!-- Google Fonts para tipografia customizada -->
-        <link
-                href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap"
-                rel="stylesheet"
-              />
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Portal de Notícias - EBAC</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
-
-  <body>
-        <!-- Navegação fixa no topo -->
+<body>
+        <!-- Navegação -->
         <nav class="navbar">
-                <div class="nav-container">
-                          <div class="logo">Flávio Tomaz</div>div>
-                          <ul class="nav-menu">
-                                      <li><a href="#sobre">Sobre</a>a></li>
-                                    <li><a href="#projetos">Projetos</a>a></li>
-                                    <li><a href="#habilidades">Habilidades</a>a></li>
-                                    <li><a href="#contato">Contato</a>a></li>
-                          </ul>ul>
-                </div>div>
+                    <div class="nav-container">
+                                    <div class="logo">Portal de Notícias</div>div>
+                                    <ul class="nav-menu">
+                                                        <li><a href="#inicio">Início</a>a></li>
+                                                    <li><a href="#tecnologia">Tecnologia</a>a></li>
+                                                    <li><a href="#entretenimento">Entretenimento</a>a></li>
+                                    </ul>ul>
+                    </div>div>
         </nav>nav>
-  
-      <!-- Seção Hero - Apresentação principal -->
-      <section id="hero" class="hero">
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="hero">
             <div class="hero-content">
-                    <h1 class="hero-title">Olá, sou Flávio Tomaz</h1>h1>
-                    <p class="hero-subtitle">
-                      Desenvolvedor Full Stack apaixonado por criar experiências web
-                      modernas e responsivas
-                    </p>p>
-                    <a href="#contato" class="btn-primary">Entre em Contato</a>a>
+                        <h1>Portal de Notícias</h1>
+                        <p>Fique atualizado com as últimas notícias de tecnologia e entretenimento</p>
             </div>div>
-      </section>section>
-  
-      <!-- Seção Sobre -->
-      <section id="sobre" class="section about">
+    </section>section>
+
+    <!-- Seção Tecnologia -->
+    <section id="tecnologia" class="news-section tech-section">
             <div class="container">
-                    <h2 class="section-title">Sobre Mim</h2>h2>
-                    <p class="about-text">
-                      Sou um desenvolvedor Full Stack com experiência em desenvolvimento web moderno.
-                      Especializado em HTML5, CSS3, JavaScript e tecnologias web atuais.
-                      Tenho paixão por criar interfaces intuitivas e código limpo e manutenível.
-                    </p>p>
+                        <h2 class="section-title">Tecnologia</h2>
+                        <div class="news-grid">
+                                        <article class="news-card">
+                                                            <div class="news-image">
+                                                                                    <img src="https://via.placeholder.com/400x250/2563eb/ffffff?text=IA+Revoluciona" alt="IA Revoluciona">
+                                                            </div>div>
+                                                            <div class="news-content">
+                                                                                    <h3>Inteligência Artificial Revoluciona o Mercado</h3>
+                                                                                    <p class="news-date">06 de Maio, 2026</p>
+                                                                                    <p class="news-description">Descubra como a IA está transformando diversos setores da indústria tecnológica com inovações incríveis.</p>
+                                                            </div>div>
+                                        </article>article>
+                        
+                                        <article class="news-card">
+                                                            <div class="news-image">
+                                                                                    <img src="https://via.placeholder.com/400x250/2563eb/ffffff?text=Novo+Framework" alt="Novo Framework">
+                                                            </div>div>
+                                                            <div class="news-content">
+                                                                                    <h3>Novo Framework JavaScript Ganha Popularidade</h3>
+                                                                                    <p class="news-date">05 de Maio, 2026</p>
+                                                                                    <p class="news-description">Um novo framework promete simplificar o desenvolvimento web com performance impressionante.</p>
+                                                            </div>div>
+    </article>article>
+                        
+                                        <article class="news-card">
+                                                            <div class="news-image">
+                                                                                    <img src="https://via.placeholder.com/400x250/2563eb/ffffff?text=Cloud+Computing" alt="Cloud Computing">
+                                                            </div>div>
+                                                            <div class="news-content">
+                                                                                    <h3>Cloud Computing Atinge Novo Patamar</h3>
+                                                                                    <p class="news-date">04 de Maio, 2026</p>
+                                                                                    <p class="news-description">Tecnologias em nuvem continuam evoluindo com soluções mais seguras e eficientes para empresas.</p>
+                                                            </div>div>
+                                        </article>article>
+                        </div>div>
             </div>div>
-      </section>section>
-  
-      <!-- Seção Projetos -->
-      <section id="projetos" class="section projects">
+    </section>section>
+
+    <!-- Seção Entretenimento -->
+    <section id="entretenimento" class="news-section entertainment-section">
             <div class="container">
-          <h2 class="section-title">Projetos</h2>h2>
-                    <div class="projects-grid">
-                              <!-- Projeto 1 -->
-                              <div class="project-card">
-                                          <div class="project-header">Portfólio Profissional</div>div>
-                                          <p class="project-description">
-                                            Site de portfólio responsivo com design moderno, navegação fluida e
-                                            formulário de contato funcional.
-                                          </p>p>
-                                          <div class="project-tech">
-                                                        <span>HTML5</span>
-                                                        <span>CSS3</span>
-                                                        <span>Responsive</span>
-                                          </div>div>
-                              </div>div>
-                    
-                              <!-- Projeto 2 -->
-                              <div class="project-card">
-                                          <div class="project-header">Portal de Notícias</div>div>
-                                          <p class="project-description">
-                                            Aplicação web para exibição de notícias com categorias temáticas,
-                                            design intuitivo e componentes reutilizáveis.
-                                          </p>p>
-                                          <div class="project-tech">
-                                                        <span>HTML5</span>
-                                                        <span>CSS3</span>
-                                                        <span>Flexbox</span>
-                                          </div>div>
-                              </div>div>
-                    
-                              <!-- Projeto 3 -->
-                              <div class="project-card">
-                                          <div class="project-header">Formulário Interativo</div>div>
-                                          <p class="project-description">
-                                            Formulário de registro com validação, design responsivo e
-                                            componentes de entrada bem estruturados.
-                                          </p>p>
-                                          <div class="project-tech">
-                                                        <span>HTML5</span>
-                                                        <span>CSS3</span>
-                                                        <span>Forms</span>
-                                          </div>div>
-                              </div>div>
-                    </div>div>
+                        <h2 class="section-title">Entretenimento</h2>
+                        <div class="news-grid">
+                                        <article class="news-card">
+                                                            <div class="news-image">
+                                                                                    <img src="https://via.placeholder.com/400x250/9333ea/ffffff?text=Cinema+Blockbuster" alt="Cinema Blockbuster">
+                                                            </div>div>
+                                                            <div class="news-content">
+                                                                                    <h3>Novo Blockbuster Quebra Recordes Mundiais</h3>
+                                                                                    <p class="news-date">06 de Maio, 2026</p>
+                                                                                    <p class="news-description">Um espetáculo cinematográfico que surpreendeu críticos e conquistou o coração do público.</p>
+                                                            </div>div>
+                                        </article>article>
+                        
+                                        <article class="news-card">
+                                                            <div class="news-image">
+                                                                                    <img src="https://via.placeholder.com/400x250/9333ea/ffffff?text=Musica+Trending" alt="Musica Trending">
+                                                            </div>div>
+                                                            <div class="news-content">
+                                                                                    <h3>Artista Brasileiro Faz Sucesso Internacional</h3>
+                                                                                    <p class="news-date">05 de Maio, 2026</p>
+                                                                                    <p class="news-description">Uma música brasileira conquistou o topo das paradas globais, marcando presença forte no mercado.</p>
+                                                            </div>div>
+                                        </article>article>
+                        
+                                        <article class="news-card">
+                                                            <div class="news-image">
+                                                                                    <img src="https://via.placeholder.com/400x250/9333ea/ffffff?text=Serie+Sucesso" alt="Serie Sucesso">
+                                                            </div>div>
+                                                            <div class="news-content">
+                                                                                    <h3>Série Original Recebe Renovação Inesperada</h3>
+                                                                                    <p class="news-date">04 de Maio, 2026</p>
+                                                                                    <p class="news-description">Após grande aclamação, a série favorita é renovada para mais temporadas, deixando fãs entusiasmados.</p>
+                                                            </div>div>
+                                        </article>article>
+                        </div>div>
             </div>div>
-      </section>section>
-  
-      <!-- Seção Habilidades -->
-      <section id="habilidades" class="section skills">
+    </section>section>
+
+    <!-- Footer -->
+    <footer class="footer">
             <div class="container">
-                    <h2 class="section-title">Habilidades</h2>h2>
-                    <div class="skills-container">
-                              <!-- Habilidades Frontend -->
-                              <div class="skill-group">
-                                          <h3 class="skill-category">Frontend</h3>h3>
-                                          <ul class="skill-list">
-                                                        <li>HTML5 Semântico</li>
-                                                        <li>CSS3 Avançado</li>
-                                                        <li>Flexbox & Grid</li>
-                                                        <li>Design Responsivo</li>
-                                                        <li>JavaScript ES6+</li>
-                                          </ul>ul>
-                              </div>div>
-                    
-                              <!-- Habilidades Backend -->
-                              <div class="skill-group">
-                                          <h3 class="skill-category">Backend</h3>h3>
-                                          <ul class="skill-list">
-                                                        <li>Python</li>
-                                                        <li>Banco de Dados</li>
-                                                        <li>APIs RESTful</li>
-                                                        <li>Git & GitHub</li>
-                                          </ul>ul>
-                              </div>div>
-                    
-                              <!-- Ferramentas -->
-                              <div class="skill-group">
-                                          <h3 class="skill-category">Ferramentas</h3>h3>
-                                          <ul class="skill-list">
-                                                        <li>VS Code</li>
-                                                        <li>GitHub</li>
-                                                        <li>Vercel</li>
-                                                        <li>DevTools</li>
-                                          </ul>ul>
-                              </div>div>
-                    </div>div>
+                        <p>&copy; 2026 Portal de Notícias. Todos os direitos reservados.</p>
             </div>div>
-      </section>section>
-  
-      <!-- Seção Contato -->
-      <section id="contato" class="section contact">
-            <div class="container">
-                    <h2 class="section-title">Entre em Contato</h2>h2>
-                    <form class="contact-form">
-                              <div class="form-group">
-                                          <input
-                                                          type="text"
-                                                          placeholder="Seu Nome"
-                                                          required
-                                                          class="form-input"
-                                                        />
-                              </div>div>
-                              <div class="form-group">
-                                          <input
-                                                          type="email"
-                                                          placeholder="Seu Email"
-                                                          required
-                                                          class="form-input"
-                                                        />
-                              </div>div>
-                              <div class="form-group">
-                                          <textarea
-                                                          placeholder="Sua Mensagem"
-                                                          rows="5"
-                                                          required
-                                                          class="form-textarea"
-                                                        ></textarea>
-                              </div>div>
-                              <button type="submit" class="btn-primary">Enviar Mensagem</button>button>
-                    </form>form>
-            
-                    <!-- Links sociais e contato -->
-                    <div class="social-links">
-                              <a href="mailto:flavio@example.com" class="social-link"
-                                            >Email: flavio@example.com</a
-                                                                                  >
-                              <a href="https://github.com" class="social-link" target="_blank"
-                                            >GitHub</a
-                                                               >
-                              <a href="https://linkedin.com" class="social-link" target="_blank"
-                                            >LinkedIn</a
-                                                                 >
-                    </div>div>
-            </div>div>
-      </section>section>
-  
-      <!-- Footer -->
-      <footer class="footer">
-            <div class="container">
-                    <p>&copy; 2026 Flávio Tomaz. Todos os direitos reservados.</p>
-            </div>div>
-      </footer>footer>
-  </body>
-</html>html></p></a></a></textarea></li></li></span></span></li></li>
-  </body></title>
+    </footer>footer>
+</body>
+</html>html></p></p></h1></li></li>
+</body></title>
     </head>
