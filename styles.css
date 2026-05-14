@@ -1,238 +1,156 @@
 /* ============================================
    Portal de Notícias - Folha de Estilos CSS
-      Autor: Flávio Tomaz Alves de Abreu
-         Descrição: Estilos para o layout profissional
-                      com 2 seções temáticas
-                         ============================================ */
+   Autor: Flávio Tomaz Alves de Abreu
+   ============================================ */
 
-/* ============================================
-   1. VARIÁVEIS E ESTILOS GLOBAIS
-      ============================================ */
-
+/* Reset básico */
 * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}
-
-:root {
-      /* Cores principais */
-      --color-tech: #2563eb;        /* Azul para Tecnologia */
-      --color-tech-light: #dbeafe;  /* Azul claro */
-      --color-entertainment: #9333ea; /* Roxo para Entretenimento */
-      --color-entertainment-light: #f3e8ff; /* Roxo claro */
-
-      /* Cores neutras */
-      --color-dark: #1f2937;
-      --color-light: #f9fafb;
-      --color-gray: #6b7280;
-
-      /* Espaçamentos */
-      --spacing-xs: 8px;
-      --spacing-sm: 16px;
-      --spacing-md: 24px;
-      --spacing-lg: 32px;
-
-      /* Tipografia */
-      --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      --line-height: 1.6;
-}
-
-html {
-      scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-      font-family: var(--font-family);
-      line-height: var(--line-height);
-      color: var(--color-dark);
-      background-color: var(--color-light);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 /* ============================================
-   2. CABEÇALHO
-      ============================================ */
-
+   Cabeçalho
+   ============================================ */
 .header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      padding: var(--spacing-lg) var(--spacing-md);
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
 }
 
 .header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: var(--spacing-xs);
-      letter-spacing: -1px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.subtitle {
-      font-size: 1.1rem;
-      opacity: 0.95;
-      font-weight: 300;
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 /* ============================================
-   3. CONTAINER PRINCIPAL
-      ============================================ */
+   Seções (base comum)
+   ============================================ */
+.secao {
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
 
-.container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: var(--spacing-lg) var(--spacing-md);
+.secao h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
+    display: inline-block;
 }
 
 /* ============================================
-   4. SEÇÕES
-      ============================================ */
-
-.section {
-      margin-bottom: var(--spacing-lg);
-      padding: var(--spacing-lg);
-      border-radius: 8px;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      border-left: 5px solid;
+   Seção Tecnologia (cor: azul)
+   ============================================ */
+.tecnologia {
+    background-color: #e3f2fd;
 }
 
-/* Seção de Tecnologia */
-.section-technology {
-      border-left-color: var(--color-tech);
-      background: linear-gradient(to right, var(--color-tech-light), white);
+.tecnologia h2 {
+    color: #0d47a1;
+    border-bottom-color: #1976d2;
 }
 
-/* Seção de Entretenimento */
-.section-entertainment {
-      border-left-color: var(--color-entertainment);
-      background: linear-gradient(to right, var(--color-entertainment-light), white);
+.tecnologia .noticia {
+    border-left: 5px solid #1976d2;
 }
 
-.section-title {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: var(--spacing-sm);
-      color: var(--color-dark);
-}
-
-.section-description {
-      font-size: 1rem;
-      color: var(--color-gray);
-      margin-bottom: var(--spacing-md);
+.tecnologia .noticia h3 {
+    color: #0d47a1;
 }
 
 /* ============================================
-   5. CONTAINERS DE NOTÍCIAS
-      ============================================ */
+   Seção Entretenimento (cor: vermelho/laranja)
+   ============================================ */
+.entretenimento {
+    background-color: #fff3e0;
+}
 
-.news-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: var(--spacing-md);
-      margin-top: var(--spacing-md);
+.entretenimento h2 {
+    color: #bf360c;
+    border-bottom-color: #e64a19;
+}
+
+.entretenimento .noticia {
+    border-left: 5px solid #e64a19;
+}
+
+.entretenimento .noticia h3 {
+    color: #bf360c;
 }
 
 /* ============================================
-   6. CARDS DE NOTÍCIA
-      ============================================ */
-
-.news-card {
-      background: white;
-      border-radius: 8px;
-      padding: var(--spacing-md);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      transition: all 0.3s ease;
-      border-top: 3px solid;
-      cursor: pointer;
+   Notícias (cards)
+   ============================================ */
+.noticia {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-/* Cor da borda superior por seção */
-.section-technology .news-card {
-      border-top-color: var(--color-tech);
+.noticia img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    display: block;
 }
 
-.section-entertainment .news-card {
-      border-top-color: var(--color-entertainment);
+.noticia h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
-/* Efeito hover */
-.news-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-}
-
-.news-title {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: var(--color-dark);
-      margin-bottom: var(--spacing-xs);
-      line-height: 1.4;
-}
-
-.news-date {
-      font-size: 0.875rem;
-      color: var(--color-gray);
-      font-weight: 500;
-      margin-bottom: var(--spacing-sm);
-}
-
-.news-content {
-      font-size: 0.95rem;
-      color: var(--color-gray);
-      line-height: 1.8;
+.noticia p {
+    font-size: 1rem;
+    color: #555;
 }
 
 /* ============================================
-   7. RODAPÉ
-      ============================================ */
-
+   Rodapé
+   ============================================ */
 .footer {
-      background: var(--color-dark);
-      color: white;
-      text-align: center;
-      padding: var(--spacing-lg) var(--spacing-md);
-      margin-top: var(--spacing-lg);
-      font-size: 0.9rem;
-      border-top: 2px solid var(--color-gray);
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
 }
 
 /* ============================================
-   8. RESPONSIVIDADE
-      ============================================ */
-
+   Responsividade
+   ============================================ */
 @media (max-width: 768px) {
-      .header h1 {
-                font-size: 1.8rem;
-      }
-
-      .section-title {
-                font-size: 1.5rem;
-      }
-
-      .news-container {
-                grid-template-columns: 1fr;
-      }
-
-      .container {
-                padding: var(--spacing-md) var(--spacing-sm);
-      }
-
-      .section {
-                padding: var(--spacing-md);
-      }
-}
-
-@media (max-width: 480px) {
-      .header h1 {
-                font-size: 1.5rem;
-      }
-
-      .section-title {
-                font-size: 1.2rem;
-      }
-
-      .news-card {
-                padding: var(--spacing-sm);
-      }
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    .secao h2 {
+        font-size: 1.5rem;
+    }
+    .noticia h3 {
+        font-size: 1.2rem;
+    }
+    .secao {
+        margin: 10px;
+        padding: 20px 15px;
+    }
 }
