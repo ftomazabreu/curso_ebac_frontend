@@ -1,62 +1,134 @@
 <!DOCTYPE html>
-  <html lang="pt-BR">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Formulário de Cadastro</title>
-      <style>
-          body {
-              font-family: Arial, sans-serif;
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 20px;
-}
-        form {
-                      border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
-}
-        label {
-                      display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-}
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 3px;
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Flávio Tomaz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-}
-        button {
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            color: #374151;
+        }
+        .form-container {
+            background: white;
+            max-width: 520px;
             width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
+            padding: 2.5rem;
+            border-radius: 0.8rem;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+        .back-link {
+            display: inline-block;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: #1e40af;
+            text-decoration: underline;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #1f2937;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #6b7280;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        label {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.4rem;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
             color: white;
+            padding: 0.85rem;
             border: none;
-            border-radius: 3px;
+            border-radius: 0.4rem;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 700;
             cursor: pointer;
-                      font-size: 16px;
-}
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 0.5rem;
+        }
         button:hover {
-            background-color: #45a049;
-}
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+        }
     </style>
 </head>
 <body>
-    <h1>Formulário de Cadastro</h1>
-          <form>
-        <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required>
-
-              <label for="email">E-mail:</label>
-              <input type="email" id="email" name="email" required>
-
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-
-        <button type="submit">Cadastrar</button>
-    </form>
+    <div class="form-container">
+        <a href="portfolio.html" class="back-link">← Voltar para o portfólio</a>
+        <h1>Formulário de Cadastro</h1>
+        <p class="subtitle">Preencha seus dados para criar uma conta</p>
+        <form>
+            <div>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres" required minlength="6">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem (opcional)</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre você..."></textarea>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
 </body>
-      </html>
+</html>
